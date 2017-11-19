@@ -1,7 +1,7 @@
 <template>
   <section class="container">
     <div>
-      <logo/>
+      <logo :name="name"/>
       <h1 class="title">
         wb-test
       </h1>
@@ -22,6 +22,11 @@ import Logo from '~/components/Logo.vue'
 export default {
   components: {
     Logo
+  },
+  data () {
+    return {
+      name: '孫豪右'
+    }
   }
 }
 </script>
